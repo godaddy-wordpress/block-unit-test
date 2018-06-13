@@ -1,0 +1,25 @@
+{
+  "name": "block-unit-test",
+  "title": "Block Unit Test",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Rich Tabor",
+  "author_shop": "ThatPluginCompany",
+  "requires": "4.9",
+  "tested_up_to": "4.9.7",
+  "license": "GPL-3.0",
+  "downloadid": "",
+  "description": "The Block Unit Test plugin creates a page for WordPress theme authors to prepare their WordPress themes for Gutenberg. Test nearly every variation of core blocks within Gutenberg.",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-cache": "^1.0.2",
+    "gulp-copy": "^1.0.1",
+    "gulp-notify": "^3.2.0",
+    "gulp-if": "^2.0.2",
+    "gulp-rename": "^1.2.0",
+    "gulp-replace-task": "^0.11.0",
+    "gulp-wp-pot": "^1.2.2",
+    "gulp-zip": "^4.0.0"
+  }
+}

@@ -1,0 +1,9 @@
+**/node_modules/**
+**/build/**
+dist/**
+languages/**
+*.sublime-project
+*.sublime-workspace
+*.cache
+.github/
+.github/issue_template.md
