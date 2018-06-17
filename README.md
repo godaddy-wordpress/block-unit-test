@@ -2,9 +2,9 @@
 
 [![WordPress plugin](https://img.shields.io/wordpress/plugin/dt/block-unit-test.svg?style=flat)](https://wordpress.org/plugins/block-unit-test/) [![WordPress plugin](https://img.shields.io/wordpress/plugin/v/block-unit-test.svg?style=flat)](https://wordpress.org/plugins/block-unit-test/) [![WordPress](https://img.shields.io/wordpress/v/block-unit-test.svg?style=flat)]() [![License](https://img.shields.io/badge/license-GPL--3.0%2B-red.svg)](https://github.com/richtabor/block-unit-test/blob/master/license.txt)
 
-Testing every core block — and every variation of every block — is no small task. That's why I built the Block Unit Test WordPress plugin. Deploy the Block Unit Test WordPress plugin and review every core Gutenberg block to ensure your theme fully supports Gutenberg. [Keep reading...](https://richtabor.com/block-unit-test/)
+Testing every core block — and every variation of every block — is no small task. That's why I built the Block Unit Test WordPress plugin. Deploy the Block Unit Test WordPress plugin and review every core Gutenberg block to ensure your theme fully supports Gutenberg. [Keep reading...](https://richtabor.com/gutenberg-block-unit-test/)
 
-[![The Block Unit Test for Gutenberg](https://user-images.githubusercontent.com/1813435/41507905-af74a83c-7209-11e8-9621-264795f76966.jpg)](https://richtabor.com/block-unit-test?utm_medium=block-unit-tes-github&utm_source=readme&utm_campaign=readme&utm_content=banner)
+[![The Block Unit Test for Gutenberg](https://user-images.githubusercontent.com/1813435/41507905-af74a83c-7209-11e8-9621-264795f76966.jpg)](https://richtabor.com/gutenberg-block-unit-test?utm_medium=block-unit-tes-github&utm_source=readme&utm_campaign=readme&utm_content=banner)
 
 > 💥 WordPress → [Download Block Unit Test on WordPress.org](https://wordpress.org/plugins/block-unit-test/).
 
