@@ -109,6 +109,8 @@ class Block_Unit_Test {
 	 */
 	public function content() {
 
+		$content = '';
+
 		$content .= '
 			<!-- wp:paragraph -->
 			<p>' . esc_html__( 'Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla.', '@@textdomain' ) . '</p>
