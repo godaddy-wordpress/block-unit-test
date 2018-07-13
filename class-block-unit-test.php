@@ -507,6 +507,12 @@ class Block_Unit_Test {
 			<!-- wp:image {"id":2117,"align":"center"} -->
 				<figure class="wp-block-image aligncenter"><img src="' . esc_url( $this->_url . '/placeholder.jpg' ) . '" alt="" class="wp-image-2117" /></figure>
 			<!-- /wp:image -->
+
+			<!-- wp:image {"id":2117,"align":"center"} -->
+				<figure class="wp-block-image aligncenter"><img src="' . esc_url( $this->_url . '/placeholder.jpg' ) . '" alt="" class="wp-image-2117" />
+					<figcaption>And an image with a caption</figcaption>
+				</figure>
+			<!-- /wp:image -->
 		';
 
 		if ( get_theme_support( 'align-wide' ) ) {
@@ -545,7 +551,9 @@ class Block_Unit_Test {
 			<!-- /wp:paragraph -->
 
 			<!-- wp:image {"id":2117,"align":"right","width":281,"height":200} -->
-			<figure class="wp-block-image alignright is-resized"><img src="' . esc_url( $this->_url . '/placeholder.jpg' ) . '" alt="" class="wp-image-2117" width="281" height="200" /></figure>
+			<figure class="wp-block-image alignright is-resized"><img src="' . esc_url( $this->_url . '/placeholder.jpg' ) . '" alt="" class="wp-image-2117" width="281" height="200" />
+				<figcaption>This one is captioned</figcaption>
+			</figure>
 			<!-- /wp:image -->
 
 			<!-- wp:paragraph -->
@@ -574,6 +582,7 @@ class Block_Unit_Test {
 				<!-- wp:core-embed/vimeo {"url":"https://vimeo.com/259230327","align":"wide","type":"video","providerNameSlug":"vimeo"} -->
 				<figure class="wp-block-embed-vimeo wp-block-embed alignwide is-type-video is-provider-vimeo">
 					https://vimeo.com/259230327
+					<figcaption>Videos can have captions too!</figcaption>
 				</figure>
 				<!-- /wp:core-embed/vimeo -->
 
@@ -898,7 +907,9 @@ class Block_Unit_Test {
 				<!-- wp:gallery {"align":"wide"} -->
 				<ul class="wp-block-gallery alignwide columns-2 is-cropped">
 					<li class="blocks-gallery-item">
-						<figure><img src="' . esc_url( $this->_url . '/placeholder.jpg' ) . '" alt="" data-id="2117" /></figure>
+						<figure><img src="' . esc_url( $this->_url . '/placeholder.jpg' ) . '" alt="" data-id="2117" />
+							<figcaption>Captions for Gallery Images</figcaption>
+						</figure>
 					</li>
 					<li class="blocks-gallery-item">
 						<figure><img src="' . esc_url( $this->_url . '/placeholder.jpg' ) . '" alt="" data-id="2119" /></figure>
@@ -1110,7 +1121,9 @@ class Block_Unit_Test {
 						<figure><img src="' . esc_url( $this->_url . '/placeholder.jpg' ) . '" alt="" data-id="2117" /></figure>
 					</li>
 					<li class="blocks-gallery-item">
-						<figure><img src="' . esc_url( $this->_url . '/placeholder.jpg' ) . '" alt="" data-id="2119" /></figure>
+						<figure><img src="' . esc_url( $this->_url . '/placeholder.jpg' ) . '" alt="" data-id="2119" />
+							<figcaption>Captions for Gallery Images</figcaption>
+						</figure>
 					</li>
 				</ul>
 				<!-- /wp:gallery -->
