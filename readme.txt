@@ -57,8 +57,8 @@ I recently published an article covering [how to add WordPress theme styles to G
 * New: Add captions to image, gallery and video blocks
 * Tweak: Add heading levels to heading blocks
 
-= 1.0.1, July 1, 2018 =
-* Tweak: Clean up block formatting
+= 1.0.1, June 29, 2018 =
+* Fix: Resolve undefined variable
 
 = 1.0.0, June 12, 2018 =
 * Initial release on WordPress.org. Enjoy!
