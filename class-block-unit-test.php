@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Gutenberg Block Unit Test
- * Plugin URI: https://richtabor.com/
+ * Plugin URI: https://richtabor.com/gutenberg-block-unit-test/
  * Description: @@pkg.description
  * Author: Rich Tabor
  * Author URI: https://richtabor.com

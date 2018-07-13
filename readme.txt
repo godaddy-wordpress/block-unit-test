@@ -1,6 +1,6 @@
 === Block Unit Test for Gutenberg ===
 Author URI: https://richtabor.com
-Plugin URI: https://richtabor.com/block-unit-test
+Plugin URI: https://richtabor.com/gutenberg-block-unit-test/
 Contributors: richtabor, coblocks, thatplugincompany, themebeans
 Tags: blocks, gutenberg, editor, page builder, gutenberg blocks
 Requires at least: 4.7.0
@@ -14,17 +14,19 @@ The Block Unit Test WordPress plugin helps WordPress theme authors prepare for G
 
 == Description ==
 
- The Block Unit Test is a development tool to help folks make better WordPress themes by preparing for the upcoming Gutenberg block editor.
+The [Block Unit Test plugin](https://richtabor.com/gutenberg-block-unit-test/) is a development tool to help folks make better WordPress themes by preparing for the upcoming Gutenberg block editor.
 
- If you’re familiar with the WordPress Theme Unit Test, the Block Unit Test plugin is essentially same kind of test — but for core Gutenberg blocks. The plugin will create a single page with all the core blocks added, including mulitple variations of blocks.
+If you’re familiar with the WordPress Theme Unit Test, the Block Unit Test plugin is essentially same kind of test — but for core Gutenberg blocks. The plugin will create a single page with all the core blocks added, including mulitple variations of blocks.
 
 Using the Block Unit Test plugin, WordPress theme authors can check the styling of each block and make the necessary fixes to fully support the new editor.
 
-This plugin is created and maintained by [Rich Tabor](https://richtabor.com?utm_medium=wp.org&utm_source=wordpressorg&utm_campaign=readme&utm_content=block-unit-test).
+This plugin is created and maintained by [Rich Tabor](https://richtabor.com?utm_medium=wp.org&utm_source=wordpressorg&utm_campaign=readme&utm_content=block-unit-test) of [ThemeBeans](https://themebeans.com?utm_medium=wp.org&utm_source=wordpressorg&utm_campaign=readme&utm_content=block-unit-test).
 
 = Built with developers in mind =
 
-Extensible, adaptable, and open source — the Block Unit Test plugin is created with theme developers in mind. There are opportunities for developers at all levels to get involved. [Click here](https://github.com/thatplugincompany/block-unit-test) to contribute to the plugin.
+Extensible, adaptable, and open source — the Block Unit Test plugin is created with theme developers in mind. There are opportunities for developers at all levels to get involved.
+
+[Click here](https://github.com/thatplugincompany/block-unit-test) to contribute to the plugin.
 
 == Installation ==
 
@@ -49,6 +51,14 @@ The Block Unit Test is a great starting point, but if you want more tips and tec
 I recently published an article covering [how to add WordPress theme styles to Gutenberg](https://richtabor.com/add-wordpress-theme-styles-to-gutenberg/?utm_medium=block-unit-test&utm_source=readme&utm_campaign=readme&utm_content=how-to-add-wordpress-theme-styling-to-gutenberg), which is a great place to start.
 
 == Changelog ==
+
+= 1.0.1, July 13, 2018 =
+* New: Automagically update the contents of the Block Unit Test page upon plugin update
+* New: Add captions to image, gallery and video blocks
+* Tweak: Add heading levels to heading blocks
+
+= 1.0.1, July 1, 2018 =
+* Tweak: Clean up block formatting
 
 = 1.0.0, June 12, 2018 =
 * Initial release on WordPress.org. Enjoy!
