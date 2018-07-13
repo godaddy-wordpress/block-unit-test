@@ -123,27 +123,27 @@ class Block_Unit_Test {
 			<hr class="wp-block-separator" />
 			<!-- /wp:separator -->
 
-			<!-- wp:heading -->
+			<!-- wp:heading {"level":1} -->
 			<h1>' . esc_html__( 'Heading One', '@@textdomain' ) . '</h1>
 			<!-- /wp:heading -->
 
-			<!-- wp:heading -->
+			<!-- wp:heading {"level":2} -->
 			<h2>' . esc_html__( 'Heading Two', '@@textdomain' ) . '</h2>
 			<!-- /wp:heading -->
 
-			<!-- wp:heading -->
+			<!-- wp:heading {"level":3} -->
 			<h3>' . esc_html__( 'Heading Three', '@@textdomain' ) . '</h3>
 			<!-- /wp:heading -->
 
-			<!-- wp:heading -->
+			<!-- wp:heading {"level":4} -->
 			<h4>' . esc_html__( 'Heading Four', '@@textdomain' ) . '</h4>
 			<!-- /wp:heading -->
 
-			<!-- wp:heading -->
+			<!-- wp:heading {"level":5} -->
 			<h5>' . esc_html__( 'Heading Five', '@@textdomain' ) . '</h5>
 			<!-- /wp:heading -->
 
-			<!-- wp:heading -->
+			<!-- wp:heading {"level":6} -->
 			<h6>' . esc_html__( 'Heading Six', '@@textdomain' ) . '</h6>
 			<!-- /wp:heading -->
 
@@ -159,7 +159,7 @@ class Block_Unit_Test {
 			<hr class="wp-block-separator" />
 			<!-- /wp:separator -->
 
-			<!-- wp:heading -->
+			<!-- wp:heading {"level":2} -->
 			<h2>Preformatted Block</h2>
 			<!-- /wp:heading -->
 
@@ -171,11 +171,11 @@ class Block_Unit_Test {
 			<hr class="wp-block-separator" />
 			<!-- /wp:separator -->
 
-			<!-- wp:heading -->
+			<!-- wp:heading {"level":2} -->
 			<h2>Ordered List</h2>
 			<!-- /wp:heading -->
 
-			<!-- wp:list -->
+			<!-- wp:list {"ordered":true} -->
 			<ol>
 				<li>Nullam id dolor id nibh ultricies vehicula ut id elit.</li>
 				<li>Donec ullamcorper nulla non metus auctor fringilla.
@@ -193,7 +193,7 @@ class Block_Unit_Test {
 			<hr class="wp-block-separator" />
 			<!-- /wp:separator -->
 
-			<!-- wp:heading -->
+			<!-- wp:heading {"level":2} -->
 			<h2>' . esc_html__( 'Unordered List', '@@textdomain' ) . '</h2>
 			<!-- /wp:heading -->
 
@@ -215,7 +215,7 @@ class Block_Unit_Test {
 			<hr class="wp-block-separator" />
 			<!-- /wp:separator -->
 
-			<!-- wp:heading -->
+			<!-- wp:heading {"level":2} -->
 			<h2>' . esc_html__( 'Verse', '@@textdomain' ) . '</h2>
 			<!-- /wp:heading -->
 
@@ -227,7 +227,7 @@ class Block_Unit_Test {
 			<pre class="wp-block-verse">A block for haiku? <br/>Why not? <br/>Blocks for all the things!</pre>
 			<!-- /wp:verse -->
 
-			<!-- wp:heading -->
+			<!-- wp:heading {"level":2} -->
 			<h2>' . esc_html__( 'Table', '@@textdomain' ) . '</h2>
 			<!-- /wp:heading -->
 
@@ -271,7 +271,7 @@ class Block_Unit_Test {
 			<hr class="wp-block-separator" />
 			<!-- /wp:separator -->
 
-			<!-- wp:heading -->
+			<!-- wp:heading {"level":2} -->
 			<h2>' . esc_html__( 'Latest Posts, List View', '@@textdomain' ) . '</h2>
 			<!-- /wp:heading -->
 
@@ -281,7 +281,7 @@ class Block_Unit_Test {
 
 			<!-- wp:latest-posts /-->
 
-			<!-- wp:heading -->
+			<!-- wp:heading {"level":2} -->
 			<h2>' . esc_html__( 'Latest Posts, Grid View', '@@textdomain' ) . '</h2>
 			<!-- /wp:heading -->
 
@@ -295,7 +295,7 @@ class Block_Unit_Test {
 			<hr class="wp-block-separator" />
 			<!-- /wp:separator -->
 
-			<!-- wp:heading -->
+			<!-- wp:heading {"level":2} -->
 			<h2>' . esc_html__( 'Blockquote', '@@textdomain' ) . '</h2>
 			<!-- /wp:heading -->
 
@@ -337,7 +337,7 @@ class Block_Unit_Test {
 			<hr class="wp-block-separator" />
 			<!-- /wp:separator -->
 
-			<!-- wp:heading -->
+			<!-- wp:heading {"level":2} -->
 			<h2>' . esc_html__( 'Audio', '@@textdomain' ) . '</h2>
 			<!-- /wp:heading -->
 
@@ -359,7 +359,7 @@ class Block_Unit_Test {
 			<hr class="wp-block-separator" />
 			<!-- /wp:separator -->
 
-			<!-- wp:heading -->
+			<!-- wp:heading {"level":2} -->
 			<h2>' . esc_html__( 'Buttons', '@@textdomain' ) . '</h2>
 			<!-- /wp:heading -->
 
@@ -395,7 +395,7 @@ class Block_Unit_Test {
 			<hr class="wp-block-separator" />
 			<!-- /wp:separator -->
 
-			<!-- wp:heading -->
+			<!-- wp:heading {"level":2} -->
 			<h2>' . esc_html__( 'Categories', '@@textdomain' ) . '</h2>
 			<!-- /wp:heading -->
 
@@ -405,7 +405,7 @@ class Block_Unit_Test {
 			<hr class="wp-block-separator" />
 			<!-- /wp:separator -->
 
-			<!-- wp:heading -->
+			<!-- wp:heading {"level":2} -->
 			<h2>' . esc_html__( 'Columns', '@@textdomain' ) . '</h2>
 			<!-- /wp:heading -->
 
@@ -425,7 +425,7 @@ class Block_Unit_Test {
 			<hr class="wp-block-separator" />
 			<!-- /wp:separator -->
 
-			<!-- wp:heading -->
+			<!-- wp:heading {"level":2} -->
 			<h2>' . esc_html__( 'Pull Quotes', '@@textdomain' ) . '</h2>
 			<!-- /wp:heading -->
 
@@ -438,7 +438,7 @@ class Block_Unit_Test {
 				<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere est at lobortis.</p><cite>Rich Tabor, ThemeBeans.com</cite></blockquote>
 			<!-- /wp:pullquote -->
 
-			<!-- wp:heading -->
+			<!-- wp:heading {"level":3} -->
 			<h3>' . esc_html__( 'Wide aligned', '@@textdomain' ) . '</h3>
 			<!-- /wp:heading -->
 
@@ -453,8 +453,8 @@ class Block_Unit_Test {
 				<blockquote class="wp-block-pullquote alignwide">
 					<p>Nulla vitae elit libero, a pharetra augue. Vestibulum id ligula porta felis euismod semper. Aenean lacinia bibendum nulla sed ibendum nulla sed consectetur. </p><cite>Rich Tabor, Founder at ThemeBeans.com</cite></blockquote>
 				<!-- /wp:pullquote -->
-				<!-- wp:heading -->
 
+				<!-- wp:heading {"level":3} -->
 				<h3>' . esc_html__( 'Full width', '@@textdomain' ) . '</h3>
 				<!-- /wp:heading -->
 
@@ -496,7 +496,7 @@ class Block_Unit_Test {
 			<hr class="wp-block-separator" />
 			<!-- /wp:separator -->
 
-			<!-- wp:heading -->
+			<!-- wp:heading {"level":2} -->
 			<h2>Image Block</h2>
 			<!-- /wp:heading -->
 
@@ -517,7 +517,7 @@ class Block_Unit_Test {
 
 		if ( get_theme_support( 'align-wide' ) ) {
 			$content .= '
-				<!-- wp:heading -->
+				<!-- wp:heading {"level":3} -->
 				<h3>' . esc_html__( 'Wide aligned', '@@textdomain' ) . '</h3>
 				<!-- /wp:heading -->
 
@@ -525,7 +525,7 @@ class Block_Unit_Test {
 				<figure class="wp-block-image alignwide"><img src="' . esc_url( $this->_url . '/placeholder.jpg' ) . '" alt="" class="wp-image-2117" /></figure>
 				<!-- /wp:image -->
 
-				<!-- wp:heading -->
+				<!-- wp:heading {"level":3} -->
 				<h3>' . esc_html__( 'Full Width', '@@textdomain' ) . '</h3>
 				<!-- /wp:heading -->
 
@@ -564,7 +564,7 @@ class Block_Unit_Test {
 			<hr class="wp-block-separator" />
 			<!-- /wp:separator -->
 
-			<!-- wp:heading -->
+			<!-- wp:heading {"level":2} -->
 			<h2>' . esc_html__( 'Video Block', '@@textdomain' ) . '</h2>
 			<!-- /wp:heading -->
 
@@ -575,7 +575,7 @@ class Block_Unit_Test {
 
 		if ( get_theme_support( 'align-wide' ) ) {
 			$content .= '
-				<!-- wp:heading -->
+				<!-- wp:heading {"level":3} -->
 				<h3>' . esc_html__( 'Wide aligned', '@@textdomain' ) . '</h3>
 				<!-- /wp:heading -->
 
@@ -586,7 +586,7 @@ class Block_Unit_Test {
 				</figure>
 				<!-- /wp:core-embed/vimeo -->
 
-				<!-- wp:heading -->
+				<!-- wp:heading {"level":3} -->
 				<h3>Full Width</h3>
 				<!-- /wp:heading -->
 
@@ -599,7 +599,7 @@ class Block_Unit_Test {
 		}
 
 		$content .= '
-			<!-- wp:heading -->
+			<!-- wp:heading {"level":2} -->
 			<h2>' . esc_html__( 'Cover Image Block', '@@textdomain' ) . '</h2>
 			<!-- /wp:heading -->
 
@@ -611,7 +611,7 @@ class Block_Unit_Test {
 
 		if ( get_theme_support( 'align-wide' ) ) {
 			$content .= '
-				<!-- wp:heading -->
+				<!-- wp:heading {"level":3} -->
 				<h3>' . esc_html__( 'Wide aligned', '@@textdomain' ) . '</h3>
 				<!-- /wp:heading -->
 
@@ -621,7 +621,7 @@ class Block_Unit_Test {
 				</div>
 				<!-- /wp:cover-image -->
 
-				<!-- wp:heading -->
+				<!-- wp:heading {"level":3} -->
 				<h3>Full Width</h3>
 				<!-- /wp:heading -->
 
@@ -674,7 +674,7 @@ class Block_Unit_Test {
 		';
 
 		$content .= '
-			<!-- wp:heading -->
+			<!-- wp:heading {"level":2} -->
 			<h2>' . esc_html__( 'Gallery Blocks', '@@textdomain' ) . '</h2>
 			<!-- /wp:heading -->
 
@@ -682,7 +682,7 @@ class Block_Unit_Test {
 			<p>Let us check out the positioning and styling of the gallery blocks.</p>
 			<!-- /wp:paragraph -->
 
-			<!-- wp:heading -->
+			<!-- wp:heading {"level":3} -->
 			<h3>Two Column Gallery</h3>
 			<!-- /wp:heading -->
 
@@ -701,7 +701,7 @@ class Block_Unit_Test {
 				</ul>
 			<!-- /wp:gallery -->
 
-			<!-- wp:heading -->
+			<!-- wp:heading {"level":3} -->
 			<h3>Three Column</h3>
 			<!-- /wp:heading -->
 
@@ -723,7 +723,7 @@ class Block_Unit_Test {
 			</ul>
 			<!-- /wp:gallery -->
 
-			<!-- wp:heading -->
+			<!-- wp:heading {"level":3} -->
 			<h3>Four Column</h3>
 			<!-- /wp:heading -->
 
@@ -748,7 +748,7 @@ class Block_Unit_Test {
 			</ul>
 			<!-- /wp:gallery -->
 
-			<!-- wp:heading -->
+			<!-- wp:heading {"level":3} -->
 			<h3>Five Column</h3>
 			<!-- /wp:heading -->
 
@@ -776,7 +776,7 @@ class Block_Unit_Test {
 			</ul>
 			<!-- /wp:gallery -->
 
-			<!-- wp:heading -->
+			<!-- wp:heading {"level":3} -->
 			<h3>Four Column, Five Images</h3>
 			<!-- /wp:heading -->
 
@@ -804,7 +804,7 @@ class Block_Unit_Test {
 			</ul>
 			<!-- /wp:gallery -->
 
-			<!-- wp:heading -->
+			<!-- wp:heading {"level":3} -->
 			<h3>Three Column, Five Images</h3>
 			<!-- /wp:heading -->
 
@@ -836,7 +836,7 @@ class Block_Unit_Test {
 			<p>Below you will find a Gallery Block inserted with two columns and five images.</p>
 			<!-- /wp:paragraph -->
 
-			<!-- wp:heading -->
+			<!-- wp:heading {"level":3} -->
 			<h3>Two Column, Five Images</h3>
 			<!-- /wp:heading -->
 
@@ -860,7 +860,7 @@ class Block_Unit_Test {
 			</ul>
 			<!-- /wp:gallery -->
 
-			<!-- wp:heading -->
+			<!-- wp:heading {"level":3} -->
 			<h3>Three Column, Four Images</h3>
 			<!-- /wp:heading -->
 
@@ -888,7 +888,7 @@ class Block_Unit_Test {
 
 		if ( get_theme_support( 'align-wide' ) ) {
 			$content .= '
-				<!-- wp:heading -->
+				<!-- wp:heading {"level":2} -->
 				<h2>Wide aligned Gallery Blocks</h2>
 				<!-- /wp:heading -->
 
@@ -896,7 +896,7 @@ class Block_Unit_Test {
 				<p>Let us check out the positioning and styling of the gallery blocks..</p>
 				<!-- /wp:paragraph -->
 
-				<!-- wp:heading -->
+				<!-- wp:heading {"level":3} -->
 				<h3>Two Column Gallery</h3>
 				<!-- /wp:heading -->
 
@@ -917,7 +917,7 @@ class Block_Unit_Test {
 				</ul>
 				<!-- /wp:gallery -->
 
-				<!-- wp:heading -->
+				<!-- wp:heading {"level":3} -->
 				<h3>Three Column</h3>
 				<!-- /wp:heading -->
 
@@ -939,7 +939,7 @@ class Block_Unit_Test {
 				</ul>
 				<!-- /wp:gallery -->
 
-				<!-- wp:heading -->
+				<!-- wp:heading {"level":3} -->
 				<h3>Four Column</h3>
 				<!-- /wp:heading -->
 
@@ -964,7 +964,7 @@ class Block_Unit_Test {
 				</ul>
 				<!-- /wp:gallery -->
 
-				<!-- wp:heading -->
+				<!-- wp:heading {"level":3} -->
 				<h3>Five Column</h3>
 				<!-- /wp:heading -->
 
@@ -992,7 +992,7 @@ class Block_Unit_Test {
 				</ul>
 				<!-- /wp:gallery -->
 
-				<!-- wp:heading -->
+				<!-- wp:heading {"level":3} -->
 				<h3>Four Column, Five Images</h3>
 				<!-- /wp:heading -->
 
@@ -1020,7 +1020,7 @@ class Block_Unit_Test {
 				</ul>
 				<!-- /wp:gallery -->
 
-				<!-- wp:heading -->
+				<!-- wp:heading {"level":3} -->
 				<h3>Three Column, Five Images</h3>
 				<!-- /wp:heading -->
 
@@ -1048,7 +1048,7 @@ class Block_Unit_Test {
 				</ul>
 				<!-- /wp:gallery -->
 
-				<!-- wp:heading -->
+				<!-- wp:heading {"level":3} -->
 				<h3>Two Column, Five Images</h3>
 				<!-- /wp:heading -->
 
@@ -1076,7 +1076,7 @@ class Block_Unit_Test {
 				</ul>
 				<!-- /wp:gallery -->
 
-				<!-- wp:heading -->
+				<!-- wp:heading {"level":3} -->
 				<h3>Three Column, Four Images</h3>
 				<!-- /wp:heading -->
 
@@ -1101,7 +1101,7 @@ class Block_Unit_Test {
 				</ul>
 				<!-- /wp:gallery -->
 
-				<!-- wp:heading -->
+				<!-- wp:heading {"level":3} -->
 				<h3>Full Width Gallery Block</h3>
 				<!-- /wp:heading -->
 
