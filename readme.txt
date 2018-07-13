@@ -52,7 +52,7 @@ I recently published an article covering [how to add WordPress theme styles to G
 
 == Changelog ==
 
-= 1.0.1, July 13, 2018 =
+= 1.0.2, July 13, 2018 =
 * New: Automagically update the contents of the Block Unit Test page upon plugin update
 * New: Add captions to image, gallery and video blocks
 * Tweak: Add heading levels to heading blocks
