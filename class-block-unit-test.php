@@ -76,6 +76,8 @@ class Block_Unit_Test {
 
 		// Actions.
 		add_action( 'admin_init', array( $this, 'create_block_unit_test_page' ) );
+		add_action( 'admin_init', array( $this, 'update_block_unit_test_page' ) );
+		add_action( 'upgrader_process_complete', array( $this, 'upgrade_completed' ), 10, 2 );
 	}
 
 	/**
@@ -102,6 +104,61 @@ class Block_Unit_Test {
 				'comment_status' => 'closed',
 			)
 		);
+	}
+
+	/**
+	 * Updates the blocks page upon plugin updates.
+	 */
+	public function update_block_unit_test_page() {
+
+		$title = apply_filters( 'block_unit_test_title', 'Block Unit Test ' );
+		$post  = get_page_by_title( $title, OBJECT, 'page' );
+
+		// Return if the page does not exist.
+		if ( ! post_exists( $title ) ) {
+			return;
+		}
+
+		// Return if the update transient does not exist.
+		if ( ! get_transient( 'block_unit_test_updated' ) ) {
+			return;
+		}
+
+		// Update the post with the latest content update.
+		wp_update_post(
+			array(
+				'ID'           => $post->ID,
+				'post_content' => $this->content(),
+			)
+		);
+
+		// Delete the transient.
+		delete_transient( 'block_unit_test_updated' );
+	}
+
+	/**
+	 * This function runs when WordPress completes its upgrade process.
+	 * It iterates through each plugin updated to see if Block Unit Test is included.
+	 *
+	 * @param array $upgrader_object Updates.
+	 * @param array $options Plugins.
+	 */
+	public function upgrade_completed( $upgrader_object, $options ) {
+
+		$block_unit_test = plugin_basename( __FILE__ );
+
+		// If an update has taken place and the updated type is plugins and the plugins element exists.
+		if ( 'update' === $options['action'] && 'plugin' === $options['type'] && isset( $options['plugins'] ) ) {
+
+			// Iterate through the plugins being updated and check if ours is there.
+			foreach ( $options['plugins'] as $plugin ) {
+
+				if ( $plugin === $block_unit_test ) {
+					// Set a transient to record that our plugin has just been updated.
+					set_transient( 'block_unit_test_updated', 1 );
+				}
+			}
+		}
 	}
 
 	/**
@@ -1129,9 +1186,7 @@ class Block_Unit_Test {
 				<!-- /wp:gallery -->
 			';
 		}
-
 		return apply_filters( 'block_unit_test_content', $content );
 	}
 }
-
 Block_Unit_Test::register();
