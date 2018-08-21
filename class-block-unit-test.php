@@ -486,6 +486,16 @@ class Block_Unit_Test {
 			<!-- /wp:separator -->
 
 			<!-- wp:heading {"level":2} -->
+			<h2>' . esc_html__( 'Archives', '@@textdomain' ) . '</h2>
+			<!-- /wp:heading -->
+
+			<!-- wp:archives {"showPostCounts":true} /-->
+
+			<!-- wp:separator -->
+			<hr class="wp-block-separator" />
+			<!-- /wp:separator -->
+
+			<!-- wp:heading {"level":2} -->
 			<h2>' . esc_html__( 'Columns', '@@textdomain' ) . '</h2>
 			<!-- /wp:heading -->
 
