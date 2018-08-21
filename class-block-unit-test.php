@@ -288,6 +288,26 @@ class Block_Unit_Test {
 			<!-- /wp:verse -->
 
 			<!-- wp:heading {"level":2} -->
+			<h2>' . esc_html__( 'Separator', '@@textdomain' ) . '</h2>
+			<!-- /wp:heading -->
+
+			<!-- wp:paragraph -->
+			<p>' . esc_html__( 'Here are examples of the three separator styles of the core Gutenberg separator block.', '@@textdomain' ) . '</p>
+			<!-- /wp:paragraph -->
+
+			<!-- wp:separator {"className":""} -->
+			<hr class="wp-block-separator"/>
+			<!-- /wp:separator -->
+
+			<!-- wp:separator {"className":" is-style-wide"} -->
+			<hr class="wp-block-separator  is-style-wide"/>
+			<!-- /wp:separator -->
+
+			<!-- wp:separator {"className":"is-style-dots"} -->
+			<hr class="wp-block-separator is-style-dots"/>
+			<!-- /wp:separator -->
+
+			<!-- wp:heading {"level":2} -->
 			<h2>' . esc_html__( 'Table', '@@textdomain' ) . '</h2>
 			<!-- /wp:heading -->
 
@@ -483,7 +503,6 @@ class Block_Unit_Test {
 			<!-- /wp:column --></div>
 			<!-- /wp:columns -->
 
-				<p class="layout-column-2">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Sed posuere consectetur est at lobortis. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec sed odio dui. Nulla vitae elit libero, a pharetra augue.</p>
 			<!-- wp:separator -->
 			<hr class="wp-block-separator"/>
 			<!-- /wp:separator -->
