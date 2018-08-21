@@ -79,6 +79,7 @@ class Block_Unit_Test {
 		add_action( 'admin_init', array( $this, 'create_block_unit_test_page' ) );
 		add_action( 'admin_init', array( $this, 'update_block_unit_test_page' ) );
 		add_action( 'upgrader_process_complete', array( $this, 'upgrade_completed' ), 10, 2 );
+		add_action( 'plugins_loaded', array( $this, 'suggest_coblocks' ) );
 
 		// Filters.
 		add_filter( 'plugin_row_meta', array( $this, 'plugin_row_meta' ), 10, 2 );
@@ -96,11 +97,29 @@ class Block_Unit_Test {
 		include_once ABSPATH . 'wp-admin/includes/plugin.php';
 
 		// Check for CoBlocks.
-		if ( ! is_plugin_active( 'coblocks/class-coblocks.php' ) ) {
-			return;
+		if ( is_plugin_active( 'coblocks/class-coblocks.php' ) ) {
+			require_once untrailingslashit( plugin_dir_path( '/', __FILE__ ) ) . 'includes/class-block-unit-test-coblocks.php';
 		}
 
-		require_once untrailingslashit( plugin_dir_path( '/', __FILE__ ) ) . 'includes/class-block-unit-test-coblocks.php';
+		// Includes.
+		require_once untrailingslashit( plugin_dir_path( '/', __FILE__ ) ) . 'includes/class-block-unit-test-suggest-coblocks.php';
+		require_once untrailingslashit( plugin_dir_path( '/', __FILE__ ) ) . 'includes/vendors/dismiss-notices/dismiss-notices.php';
+	}
+
+	/**
+	 * Reccommend CoBlocks, if the plugin is not installed.
+	 *
+	 * @access public
+	 * @since 1.0.3
+	 * @return void
+	 */
+	public function suggest_coblocks() {
+
+		// Check for CoBlocks and suggest it if it's not installed.
+		if ( ! class_exists( 'CoBlocks' ) ) {
+			$suggestion = new Block_Unit_Test_Suggest_CoBlocks( plugin_dir_path( __FILE__ ) );
+			$suggestion = $suggestion->run();
+		}
 	}
 
 	/**
