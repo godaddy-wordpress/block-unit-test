@@ -1,6 +1,6 @@
 <?php
 /**
- * CoBlocks Block Unit Test
+ * Unit testing for CoBlocks, if the plugin is activated.
  *
  * @package   @@pkg.title
  * @author    @@pkg.author
