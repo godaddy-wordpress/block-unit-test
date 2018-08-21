@@ -6,7 +6,7 @@
  * Author: Rich Tabor
  * Author URI: https://richtabor.com
  * Tags: gutenberg, editor, block, unit test, coblocks
- * Version: 1.0.2
+ * Version: 1.0.3
  * Text Domain: '@@pkg.name'
  * Domain Path: languages
  * Tested up to: @@pkg.tested_up_to
