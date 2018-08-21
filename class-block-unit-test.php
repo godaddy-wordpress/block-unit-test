@@ -470,15 +470,72 @@ class Block_Unit_Test {
 			<!-- /wp:heading -->
 
 			<!-- wp:columns -->
-			<div class="wp-block-columns has-2-columns">
-				<!-- wp:paragraph {"layout":"column-1"} -->
-				<p class="layout-column-1">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Sed posuere consectetur est at lobortis. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec sed odio dui. Nulla vitae elit libero, a pharetra augue.</p>
-				<!-- /wp:paragraph -->
+			<div class="wp-block-columns has-2-columns"><!-- wp:column -->
+			<div class="wp-block-column"><!-- wp:paragraph -->
+			<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Curabitur blandit tempus porttitor.</p>
+			<!-- /wp:paragraph --></div>
+			<!-- /wp:column -->
 
-				<!-- wp:paragraph {"layout":"column-2"} -->
+			<!-- wp:column -->
+			<div class="wp-block-column"><!-- wp:paragraph -->
+			<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Curabitur blandit tempus porttitor.</p>
+			<!-- /wp:paragraph --></div>
+			<!-- /wp:column --></div>
+			<!-- /wp:columns -->
+
 				<p class="layout-column-2">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Sed posuere consectetur est at lobortis. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec sed odio dui. Nulla vitae elit libero, a pharetra augue.</p>
-				<!-- /wp:paragraph -->
-			</div>
+			<!-- wp:separator -->
+			<hr class="wp-block-separator"/>
+			<!-- /wp:separator -->
+
+			<!-- wp:columns {"columns":3} -->
+			<div class="wp-block-columns has-3-columns"><!-- wp:column -->
+			<div class="wp-block-column"><!-- wp:paragraph -->
+			<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. </p>
+			<!-- /wp:paragraph --></div>
+			<!-- /wp:column -->
+
+			<!-- wp:column -->
+			<div class="wp-block-column"><!-- wp:paragraph -->
+			<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. </p>
+			<!-- /wp:paragraph --></div>
+			<!-- /wp:column -->
+
+			<!-- wp:column -->
+			<div class="wp-block-column"><!-- wp:paragraph -->
+			<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. </p>
+			<!-- /wp:paragraph --></div>
+			<!-- /wp:column --></div>
+			<!-- /wp:columns -->
+
+			<!-- wp:separator -->
+			<hr class="wp-block-separator"/>
+			<!-- /wp:separator -->
+
+			<!-- wp:columns {"columns":4} -->
+			<div class="wp-block-columns has-4-columns"><!-- wp:column -->
+			<div class="wp-block-column"><!-- wp:paragraph -->
+			<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condim entum nibh.</p>
+			<!-- /wp:paragraph --></div>
+			<!-- /wp:column -->
+
+			<!-- wp:column -->
+			<div class="wp-block-column"><!-- wp:paragraph -->
+			<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condim entum nibh.</p>
+			<!-- /wp:paragraph --></div>
+			<!-- /wp:column -->
+
+			<!-- wp:column -->
+			<div class="wp-block-column"><!-- wp:paragraph -->
+			<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condim entum nibh.</p>
+			<!-- /wp:paragraph --></div>
+			<!-- /wp:column -->
+
+			<!-- wp:column -->
+			<div class="wp-block-column"><!-- wp:paragraph -->
+			<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condim entum nibh.</p>
+			<!-- /wp:paragraph --></div>
+			<!-- /wp:column --></div>
 			<!-- /wp:columns -->
 
 			<!-- wp:separator -->
