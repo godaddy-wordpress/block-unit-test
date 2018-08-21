@@ -34,7 +34,7 @@ var zip		  	= require('gulp-zip');
 var copy		= require('gulp-copy');
 var cache               = require('gulp-cache');
 var gulpif              = require('gulp-if');
-var wpPot        = require('gulp-wp-pot');
+var wpPot        	= require('gulp-wp-pot');
 
 /**
  * Tasks.
