@@ -1,7 +1,6 @@
 <?php
-
 /**
- * Persist Admin notices Dismissal
+ * Persist Admin Notices Dismissal
  *
  * Copyright (C) 2016  Agbonghama Collins <http://w3guy.com>
  *
@@ -19,8 +18,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  * @package Persist Admin notices Dismissal
- * @author  Agbonghama Collins
- * @author  Andy Fragen
+ * @author  Agbonghama Collins, Andy Fragen
  * @license http://www.gnu.org/licenses GNU General Public License
  * @version 1.3.2
  */
@@ -115,7 +113,5 @@ if ( ! class_exists( 'PAnD' ) ) {
 				return true;
 			}
 		}
-
 	}
-
 }
