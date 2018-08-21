@@ -49,6 +49,7 @@ class Block_Unit_Test {
 	public static function register() {
 		if ( null === self::$instance ) {
 			self::$instance = new Block_Unit_Test();
+			self::$instance->includes();
 		}
 	}
 
@@ -81,6 +82,25 @@ class Block_Unit_Test {
 
 		// Filters.
 		add_filter( 'plugin_row_meta', array( $this, 'plugin_row_meta' ), 10, 2 );
+	}
+
+	/**
+	 * Include required files.
+	 *
+	 * @access private
+	 * @since 1.0.3
+	 * @return void
+	 */
+	private function includes() {
+
+		include_once ABSPATH . 'wp-admin/includes/plugin.php';
+
+		// Check for CoBlocks.
+		if ( ! is_plugin_active( 'coblocks/class-coblocks.php' ) ) {
+			return;
+		}
+
+		require_once untrailingslashit( plugin_dir_path( '/', __FILE__ ) ) . 'includes/class-block-unit-test-coblocks.php';
 	}
 
 	/**
