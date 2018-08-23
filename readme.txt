@@ -52,6 +52,16 @@ I recently published an article covering [how to add WordPress theme styles to G
 
 == Changelog ==
 
+= 1.0.4, August 23, 2018 =
+* Tweak: Update the CoBlocks unit test
+
+= 1.0.3, August 22, 2018 =
+* New: Suggest running a unit test for CoBlocks
+* New: Add a CoBlocks unit test if the plugin is activated
+* New: Add the Archives block to the unit test
+* New: Add styles for the core Separator block
+* New: Add more tests for various column counts
+
 = 1.0.2, July 13, 2018 =
 * New: Automagically update the contents of the Block Unit Test page upon plugin update
 * New: Add captions to image, gallery and video blocks
