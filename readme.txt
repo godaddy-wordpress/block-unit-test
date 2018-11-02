@@ -52,6 +52,9 @@ I recently published an article covering [how to add WordPress theme styles to G
 
 == Changelog ==
 
+= 1.0.5, November 03, 2018 =
+* Tweak: Update the CoBlocks and Gutenberg unit tests
+
 = 1.0.4, August 23, 2018 =
 * Tweak: Update the CoBlocks unit test
 
