@@ -355,35 +355,7 @@ class Block_Unit_Test {
 			<!-- /wp:paragraph -->
 
 			<!-- wp:table -->
-			<table class="wp-block-table">
-				<tbody>
-					<tr style="height:45px">
-						<td style="width:217px;height:45px">Employee</td>
-						<td style="width:217px;height:45px">Salary</td>
-						<td style="width:257px;height:45px">Position</td>
-					</tr>
-					<tr style="height:45px">
-						<td style="width:217px;height:45px">Jane Doe<br/></td>
-						<td style="width:217px;height:45px">$100k</td>
-						<td style="width:257px;height:45px">CEO</td>
-					</tr>
-					<tr style="height:45px">
-						<td style="width:217px;height:45px">John Doe</td>
-						<td style="width:217px;height:45px">$100k</td>
-						<td style="width:257px;height:45px">CTO</td>
-					</tr>
-					<tr style="height:45px">
-						<td style="width:217px;height:45px">Jane Bloggs</td>
-						<td style="width:217px;height:45px">$100k</td>
-						<td style="width:257px;height:45px">Engineering</td>
-					</tr>
-					<tr style="height:45px">
-						<td style="width:217px;height:45px">Fred Bloggs</td>
-						<td style="width:217px;height:45px">$100k</td>
-						<td style="width:257px;height:45px">Marketing</td>
-					</tr>
-				</tbody>
-			</table>
+			<table class="wp-block-table"><tbody><tr><td>Employee</td><td>Salary</td><td>Position</td></tr><tr><td>Jane Doe<br></td><td>$100k</td><td>CEO</td></tr><tr><td>John Doe</td><td>$100k</td><td>CTO</td></tr><tr><td>Jane Bloggs</td><td>$100k</td><td>Engineering</td></tr><tr><td>Fred Bloggs</td><td>$100k</td><td>Marketing</td></tr></tbody></table>
 			<!-- /wp:table -->
 
 			<!-- wp:separator -->
