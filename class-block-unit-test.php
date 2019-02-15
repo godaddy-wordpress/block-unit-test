@@ -250,14 +250,6 @@ class Block_Unit_Test {
 			<hr class="wp-block-separator" />
 			<!-- /wp:separator -->
 
-			<!-- wp:subhead -->
-			<p class="wp-block-subhead">' . esc_html__( 'This is a subhead block, where you can add a little extra blurb about your post or page. Cool yeah?', '@@textdomain' ) . '</p>
-			<!-- /wp:subhead -->
-
-			<!-- wp:separator -->
-			<hr class="wp-block-separator" />
-			<!-- /wp:separator -->
-
 			<!-- wp:heading {"level":2} -->
 			<h2>Preformatted Block</h2>
 			<!-- /wp:heading -->
