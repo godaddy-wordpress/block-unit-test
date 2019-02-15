@@ -6,7 +6,7 @@
  * Author: Rich Tabor
  * Author URI: https://richtabor.com
  * Tags: gutenberg, editor, block, unit test, coblocks
- * Version: 1.0.5
+ * Version: 1.0.6
  * Text Domain: '@@pkg.name'
  * Domain Path: languages
  * Tested up to: @@pkg.tested_up_to
@@ -1276,6 +1276,20 @@ class Block_Unit_Test {
 					</li>
 				</ul>
 				<!-- /wp:gallery -->
+
+				<!-- wp:heading -->
+				<h2>Media &amp; Text</h2>
+				<!-- /wp:heading -->
+
+				<!-- wp:media-text -->
+				<div class="wp-block-media-text alignwide"><figure class="wp-block-media-text__media"></figure><div class="wp-block-media-text__content"><!-- wp:paragraph {"placeholder":"Content…","fontSize":"large"} -->
+				<p class="has-large-font-size">Large text</p>
+				<!-- /wp:paragraph -->
+
+				<!-- wp:paragraph -->
+				<p>This is part of the InnerBlocks text for the Media &amp; Text block.</p>
+				<!-- /wp:paragraph --></div></div>
+				<!-- /wp:media-text -->
 			';
 		}
 		return apply_filters( 'block_unit_test_content', $content );
