@@ -52,9 +52,11 @@ I recently published an article covering [how to add WordPress theme styles to G
 
 == Changelog ==
 
-= 1.0.5, February 15, 2019 =
-* Tweak: Update the CoBlocks unit tests to support the new WordPress blocks
+= 1.0.6, February 15, 2019 =
+* Tweak: Add Media & Text block to the unit test
+* Tweak: Update the CoBlocks unit tests to support its new blocks
 * Tweak: Remove the deprecated subhead block
+* Tweak: Add support for WordPress 5.1
 
 = 1.0.5, November 03, 2018 =
 * Tweak: Update the CoBlocks and Gutenberg unit tests
