@@ -8,3 +8,4 @@ languages/**
 .DS_Store
 .github/
 .github/issue_template.md
+vendor/
