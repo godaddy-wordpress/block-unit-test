@@ -111,6 +111,7 @@ class Block_Unit_Test_Suggest_CoBlocks {
 
 		$coblocks = '<a href="https://coblocks.com" target="_blank">CoBlocks</a>';
 
+		// translators: %1$s is a placeholder for a link to the CoBlocks website. %2$s is a placeholder for the activate or install CoBlocks link.
 		echo '<div data-dismissible="dismiss-coblocks-21" class="notice notice-info is-dismissible"><p>Block Unit Test' . wp_kses( sprintf( __( ' suggests performing a unit test for %1$s. To run the additional unit test, %2$s', '@@textdomain' ), $coblocks, $link ), $allowed_html_array ) . '</p></div>';
 	}
 }
