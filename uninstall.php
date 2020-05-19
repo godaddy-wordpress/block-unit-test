@@ -16,10 +16,10 @@ if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 require_once 'class-block-unit-test.php';
 
 // Pull the Block Unit Test page.
-$title = apply_filters( 'block_unit_test_title', 'Block Unit Test ' );
-$page  = get_page_by_title( $title, OBJECT, 'page' );
+$block_unit_test_page_title = apply_filters( 'block_unit_test_title', 'Block Unit Test ' );
+$block_unit_test_page       = get_page_by_title( $block_unit_test_page_title, OBJECT, 'page' );
 
-wp_trash_post( $page->ID );
+wp_trash_post( $block_unit_test_page->ID );
 
 // Clear any cached data that has been removed.
 wp_cache_flush();
