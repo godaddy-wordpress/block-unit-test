@@ -2,11 +2,11 @@
   "name": "godaddy-wordpress/block-unit-test",
   "license": "GPL-2.0-only",
   "require": {
-    "php": ">=5.6"
+    "php": ">=7.2"
   },
   "config": {
     "platform": {
-      "php": "5.6"
+      "php": "7.3"
     }
   },
   "scripts": {
@@ -14,8 +14,8 @@
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.5",
-    "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
-    "phpcompatibility/phpcompatibility-wp": "^2.1",
-    "wp-coding-standards/wpcs": "^2.1"
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
+    "phpcompatibility/phpcompatibility-wp": "^2.1.2",
+    "wp-coding-standards/wpcs": "^2.3"
   }
 }
