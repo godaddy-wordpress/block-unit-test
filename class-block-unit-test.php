@@ -645,7 +645,7 @@ class Block_Unit_Test {
 			<!-- /wp:separator -->
 
 			<!-- wp:heading {"level":2} -->
-			<h2>Image Block</h2>
+			<h2>Image Blocks</h2>
 			<!-- /wp:heading -->
 
 			<!-- wp:paragraph -->
@@ -658,8 +658,12 @@ class Block_Unit_Test {
 
 			<!-- wp:image {"id":2117,"align":"center"} -->
 				<figure class="wp-block-image aligncenter"><img src="' . esc_url( $this->url . '/placeholder.jpg' ) . '" alt="" class="wp-image-2117" />
-					<figcaption>And an image with a caption</figcaption>
+					<figcaption>A caption, features older block markup circa 2019.</figcaption>
 				</figure>
+			<!-- /wp:image -->
+
+			<!-- wp:image {"align":"center","id":13,"sizeSlug":"full","linkDestination":"none"} -->
+			<div class="wp-block-image"><figure class="aligncenter size-full"><img src="' . esc_url( $this->url . '/placeholder.jpg' ) . '"  alt="" class="wp-image-13"/><figcaption>Center aligned; image block markup from Gutenberg 11.5</figcaption></figure></div>
 			<!-- /wp:image -->
 		';
 
@@ -695,14 +699,27 @@ class Block_Unit_Test {
 			<!-- /wp:image -->
 
 			<!-- wp:paragraph -->
-			<p><strong>Left aligned:</strong> dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. </p>
+			<p>Image block with left alignment and markup as of Gutenberg 11.5 (Mid 2021) immediately follows this paragraph block.</p>
+			<!-- /wp:paragraph -->
+
+			<!-- wp:image {"align":"left","id":13,"sizeSlug":"medium","linkDestination":"none"} -->
+			<div class="wp-block-image"><figure class="alignleft size-medium"><img src="' . esc_url( $this->url . '/placeholder.jpg' ) . '" alt="" class="wp-image-13"/></figure></div>
+			<!-- /wp:image -->
+
+			<!-- wp:paragraph -->
+			<p>dimentum nibh, ut fermentum massa justo sit amet risus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. </p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:image {"id":2117,"align":"right","width":281,"height":200} -->
 			<figure class="wp-block-image alignright is-resized"><img src="' . esc_url( $this->url . '/placeholder.jpg' ) . '" alt="" class="wp-image-2117" width="281" height="200" />
-				<figcaption>This one is captioned</figcaption>
+				<figcaption>Image block, right aligned, block markup circa 2019.</figcaption>
 			</figure>
 			<!-- /wp:image -->
+
+			<!-- wp:image {"align":"right","id":15,"sizeSlug":"full","linkDestination":"none"} -->
+			<div class="wp-block-image"><figure class="alignright size-full"><img src="' . esc_url( $this->url . '/placeholder.jpg' ) . '"alt="" class="wp-image-15"/><figcaption>Image block, right aligned with block markup as of Gutenberg 11.5</figcaption></figure></div>
+			<!-- /wp:image -->
+
 
 			<!-- wp:paragraph -->
 			<p>Nullam quis risus eget urna mollis ornare vel eu leo. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas faucibus mollis interdum. Vestibulum id ligula porta felis euismod semper. Nullam quis risus.</p>
