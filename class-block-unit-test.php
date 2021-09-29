@@ -581,13 +581,16 @@ class Block_Unit_Test {
 			<!-- /wp:heading -->
 
 			<!-- wp:paragraph -->
-			<p>Here is an example of the core pull quote block, set to display centered. Nulla vitae elit libero, a pharetra augue. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+			<p>Here is an example of the core pull quote block; displays in the center by default. Nulla vitae elit libero, a pharetra augue. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
 			<!-- /wp:paragraph -->
 
-			<!-- wp:pullquote {"align":"center"} -->
-			<blockquote class="wp-block-pullquote aligncenter">
-				<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere est at lobortis.</p><cite>Rich Tabor, ThemeBeans.com</cite></blockquote>
+			<!-- wp:pullquote -->
+			<figure class="wp-block-pullquote"><blockquote><p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere est at lobortis.</p><cite>Rich Tabor, ThemeBeans.com/cite&gt;</cite></blockquote></figure>
 			<!-- /wp:pullquote -->
+		';
+
+		if ( get_theme_support( 'align-wide' ) ) {
+			$content .= '
 
 			<!-- wp:heading {"level":3} -->
 			<h3>' . esc_html__( 'Wide aligned', '@@textdomain' ) . '</h3>
@@ -596,14 +599,10 @@ class Block_Unit_Test {
 			<!-- wp:paragraph -->
 			<p>Here is an example of the core pull quote block, set to display with the wide-aligned attribute, if the theme allows it. Nulla vitae elit libero, a pharetra augue. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
 			<!-- /wp:paragraph -->
-		';
 
-		if ( get_theme_support( 'align-wide' ) ) {
-			$content .= '
-				<!-- wp:pullquote {"align":"wide"} -->
-				<blockquote class="wp-block-pullquote alignwide">
-					<p>Nulla vitae elit libero, a pharetra augue. Vestibulum id ligula porta felis euismod semper. Aenean lacinia bibendum nulla sed ibendum nulla sed consectetur. </p><cite>Rich Tabor, Founder at ThemeBeans.com</cite></blockquote>
-				<!-- /wp:pullquote -->
+			<!-- wp:pullquote {"align":"wide"} -->
+			<figure class="wp-block-pullquote alignwide"><blockquote><p>Nulla vitae elit libero, a pharetra augue. Vestibulum id ligula porta felis euismod semper. Aenean lacinia bibendum nulla sed ibendum nulla sed consectetur.</p><cite>Rich Tabor</cite></blockquote></figure>
+			<!-- /wp:pullquote -->
 
 				<!-- wp:heading {"level":3} -->
 				<h3>' . esc_html__( 'Full width', '@@textdomain' ) . '</h3>
@@ -614,8 +613,7 @@ class Block_Unit_Test {
 				<!-- /wp:paragraph -->
 
 				<!-- wp:pullquote {"align":"full"} -->
-				<blockquote class="wp-block-pullquote alignfull">
-					<p>Etiam porta sem malesuada magna mollis euismod. Sed posuere consectetur est at lobortis. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. </p><cite>Rich Tabor, Founder at ThemeBeans.com</cite></blockquote>
+				<figure class="wp-block-pullquote alignfull"><blockquote><p>Etiam porta sem malesuada magna mollis euismod. Sed posuere consectetur est at lobortis. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus</p><cite>Rich Tabor, founder at Themebeans.com</cite></blockquote></figure>
 				<!-- /wp:pullquote -->
 
 				<!-- wp:paragraph -->
@@ -626,17 +624,16 @@ class Block_Unit_Test {
 
 		$content .= '
 			<!-- wp:pullquote {"align":"left"} -->
-			<blockquote class="wp-block-pullquote alignleft">
-				<p>Here we have a left-aligned pullquote.</p><cite>Rich Tabor</cite></blockquote>
+			<figure class="wp-block-pullquote alignleft"><blockquote><p>Here is a pull quote whose container is left-aligned. </p><cite>Rich Tabor</cite></blockquote></figure>
 			<!-- /wp:pullquote -->
+
 
 			<!-- wp:paragraph -->
 			<p>Donec id elit non mi porta gravida at eget metus. Nullam quis risus eget urna mollis ornare vel eu leo. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras mattis consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper.</p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:pullquote {"align":"right"} -->
-			<blockquote class="wp-block-pullquote alignright">
-				<p>Here we have a right-aligned pullquote.</p><cite>Rich Tabor</cite></blockquote>
+			<figure class="wp-block-pullquote alignright"><blockquote><p>Here\'s a pull quote whose container is right-aligned. I\'m adding another line of text for effect.</p><cite>Will Skora</cite></blockquote></figure>
 			<!-- /wp:pullquote -->
 
 			<!-- wp:paragraph -->
@@ -648,7 +645,7 @@ class Block_Unit_Test {
 			<!-- /wp:separator -->
 
 			<!-- wp:heading {"level":2} -->
-			<h2>Image Block</h2>
+			<h2>Image Blocks</h2>
 			<!-- /wp:heading -->
 
 			<!-- wp:paragraph -->
@@ -661,8 +658,12 @@ class Block_Unit_Test {
 
 			<!-- wp:image {"id":2117,"align":"center"} -->
 				<figure class="wp-block-image aligncenter"><img src="' . esc_url( $this->url . '/placeholder.jpg' ) . '" alt="" class="wp-image-2117" />
-					<figcaption>And an image with a caption</figcaption>
+					<figcaption>A caption, features older block markup circa 2019.</figcaption>
 				</figure>
+			<!-- /wp:image -->
+
+			<!-- wp:image {"align":"center","id":13,"sizeSlug":"full","linkDestination":"none"} -->
+			<div class="wp-block-image"><figure class="aligncenter size-full"><img src="' . esc_url( $this->url . '/placeholder.jpg' ) . '"  alt="" class="wp-image-13"/><figcaption>Center aligned; image block markup from Gutenberg 11.5</figcaption></figure></div>
 			<!-- /wp:image -->
 		';
 
@@ -698,14 +699,27 @@ class Block_Unit_Test {
 			<!-- /wp:image -->
 
 			<!-- wp:paragraph -->
-			<p><strong>Left aligned:</strong> dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. </p>
+			<p>Image block with left alignment and markup as of Gutenberg 11.5 (Mid 2021) immediately follows this paragraph block.</p>
+			<!-- /wp:paragraph -->
+
+			<!-- wp:image {"align":"left","id":13,"sizeSlug":"medium","linkDestination":"none"} -->
+			<div class="wp-block-image"><figure class="alignleft size-medium"><img src="' . esc_url( $this->url . '/placeholder.jpg' ) . '" alt="" class="wp-image-13"/></figure></div>
+			<!-- /wp:image -->
+
+			<!-- wp:paragraph -->
+			<p>dimentum nibh, ut fermentum massa justo sit amet risus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. </p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:image {"id":2117,"align":"right","width":281,"height":200} -->
 			<figure class="wp-block-image alignright is-resized"><img src="' . esc_url( $this->url . '/placeholder.jpg' ) . '" alt="" class="wp-image-2117" width="281" height="200" />
-				<figcaption>This one is captioned</figcaption>
+				<figcaption>Image block, right aligned, block markup circa 2019.</figcaption>
 			</figure>
 			<!-- /wp:image -->
+
+			<!-- wp:image {"align":"right","id":15,"sizeSlug":"full","linkDestination":"none"} -->
+			<div class="wp-block-image"><figure class="alignright size-full"><img src="' . esc_url( $this->url . '/placeholder.jpg' ) . '"alt="" class="wp-image-15"/><figcaption>Image block, right aligned with block markup as of Gutenberg 11.5</figcaption></figure></div>
+			<!-- /wp:image -->
+
 
 			<!-- wp:paragraph -->
 			<p>Nullam quis risus eget urna mollis ornare vel eu leo. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas faucibus mollis interdum. Vestibulum id ligula porta felis euismod semper. Nullam quis risus.</p>
