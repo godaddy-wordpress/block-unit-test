@@ -669,7 +669,7 @@ class Block_Unit_Test {
 			<!-- /wp:image -->
 		';
 
-		if ( get_theme_support( 'align-wide' )  || isset(  $content_size_in_theme_json )  || isset(  $content_size_in_theme_json ) ) {
+		if ( get_theme_support( 'align-wide' )  || isset(  $content_size_in_theme_json )  ) {
 			$content .= '
 				<!-- wp:heading {"level":3} -->
 				<h3>' . esc_html__( 'Wide aligned', '@@textdomain' ) . '</h3>
