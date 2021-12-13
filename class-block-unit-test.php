@@ -210,7 +210,7 @@ class Block_Unit_Test {
 	 */
 	public function content() {
 
-		$layout_settings = gutenberg_get_global_settings(array( 'layout' ));
+		$layout_settings = wp_get_global_settings(array( 'layout' ));
 		$content_size_in_theme_json = $layout_settings['contentSize'];
 
 		$content = '';
