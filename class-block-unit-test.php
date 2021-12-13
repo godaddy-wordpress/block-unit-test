@@ -210,6 +210,9 @@ class Block_Unit_Test {
 	 */
 	public function content() {
 
+		$layout_settings = wp_get_global_settings(array( 'layout' ));
+		$content_size_in_theme_json = $layout_settings['contentSize'];
+
 		$content = '';
 
 		$content .= '
@@ -598,7 +601,7 @@ class Block_Unit_Test {
 			<!-- /wp:paragraph -->
 		';
 
-		if ( get_theme_support( 'align-wide' ) ) {
+		if ( get_theme_support( 'align-wide' )  || isset( $content_size_in_theme_json ) ) {
 			$content .= '
 				<!-- wp:pullquote {"align":"wide"} -->
 				<blockquote class="wp-block-pullquote alignwide">
@@ -666,7 +669,7 @@ class Block_Unit_Test {
 			<!-- /wp:image -->
 		';
 
-		if ( get_theme_support( 'align-wide' ) ) {
+		if ( get_theme_support( 'align-wide' )  || isset(  $content_size_in_theme_json )  ) {
 			$content .= '
 				<!-- wp:heading {"level":3} -->
 				<h3>' . esc_html__( 'Wide aligned', '@@textdomain' ) . '</h3>
@@ -724,7 +727,7 @@ class Block_Unit_Test {
 			<!-- /wp:paragraph -->
 		';
 
-		if ( get_theme_support( 'align-wide' ) ) {
+		if ( get_theme_support( 'align-wide' )  || isset( $content_size_in_theme_json ) ) {
 			$content .= '
 				<!-- wp:heading {"level":3} -->
 				<h3>' . esc_html__( 'Wide aligned', '@@textdomain' ) . '</h3>
@@ -760,7 +763,7 @@ class Block_Unit_Test {
 
 		';
 
-		if ( get_theme_support( 'align-wide' ) ) {
+		if ( get_theme_support( 'align-wide' )  || isset( $content_size_in_theme_json ) ) {
 			$content .= '
 				<!-- wp:heading {"level":3} -->
 				<h3>' . esc_html__( 'Wide aligned', '@@textdomain' ) . '</h3>
@@ -1037,7 +1040,7 @@ class Block_Unit_Test {
 			<!-- /wp:gallery -->
 		';
 
-		if ( get_theme_support( 'align-wide' ) ) {
+		if ( get_theme_support( 'align-wide' )  || isset(  $content_size_in_theme_json ) ) {
 			$content .= '
 				<!-- wp:heading {"level":2} -->
 				<h2>Wide aligned Gallery Blocks</h2>
