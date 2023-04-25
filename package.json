@@ -14,11 +14,11 @@
     "del": "^3.0.0",
     "gulp": "^4.0.0",
     "gulp-cache": "^1.0.2",
-    "gulp-copy": "^1.0.1",
+    "gulp-copy": "^4.0.1",
     "gulp-notify": "^3.2.0",
     "gulp-if": "^2.0.2",
     "gulp-rename": "^1.2.0",
-    "gulp-replace-task": "^0.11.0",
+    "gulp-replace-task": "^2.0.1",
     "gulp-wp-pot": "^1.2.2",
     "gulp-zip": "^4.0.0"
   }
